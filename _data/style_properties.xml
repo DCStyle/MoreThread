@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_properties>
+  <style_property property_name="dcMoreThread_thumbnail_height" group_name="dcMoreThread" title="Thumbnail height" property_type="value" value_type="unit" value_group="thumbnail" display_order="1">
+    <value>"50px"</value>
+  </style_property>
+  <style_property property_name="dcMoreThread_thumbnail_width" group_name="dcMoreThread" title="Thumbnail width" property_type="value" value_type="unit" value_group="thumbnail" display_order="0">
+    <value>"50px"</value>
+  </style_property>
+</style_properties>

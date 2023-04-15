@@ -1,0 +1,21 @@
+{
+    "legacy_addon_id": "",
+    "title": "D.C Style - More Thread",
+    "description": "Keep your users staying with you more by adding more threads under what they read.",
+    "version_id": 1000170,
+    "version_string": "1.0.1",
+    "dev": "D.C Style",
+    "dev_url": "https://fb.com/DumpPenguin",
+    "faq_url": "",
+    "support_url": "https://dcstyle.info",
+    "extra_urls": {
+        "Blog": "https://fb.com/dcstylexf"
+    },
+    "require": {
+        "XF": [
+            2020070,
+            "XenForo 2.2.0+"
+        ]
+    },
+    "icon": "logo.png"
+}

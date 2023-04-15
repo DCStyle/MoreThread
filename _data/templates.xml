@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="dcMoreThread.less" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[.block-moreThread
+{
+	margin-top: 15px !important;
+	
+	.block-container
+	{
+		.block-minorHeader
+		{
+			display: inline-block;
+			background: @xf-majorHeadingBg;
+			color: @xf-majorHeadingTextColor;
+		}
+		
+		.block-body
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			border-top: 3px solid @xf-majorHeadingBg;
+			padding-top: 10px;
+			
+			.block-row
+			{
+				border: 0;
+				flex: 0 0 50%;
+				overflow: hidden;
+				
+				@media (max-width: @xf-responsiveWide)
+				{
+					flex: 0 0 100%;
+				}
+				
+				.contentRow
+				{
+					.avatar
+					{
+						width: 50px;
+						height: 50px;
+						border-radius: @xf-borderRadiusLarge;
+						
+						&.thumbnail
+						{
+							width: 65px;
+							height: 50px;
+							background-size: cover;
+							background-position: center;
+							border-radius: @xf-borderRadiusSmall;
+						}
+					}
+					
+					.contentRow-main
+					{
+						.title
+						{
+							font-size: @xf-fontSizeNormal;
+							font-weight: 600;
+							color: @xf-textColor;
+						}
+						
+						.desc
+						{
+							font-size: @xf-fontSizeSmaller;
+							color: @xf-textColorMuted;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.block-moreThread.block-cover
+{
+	.block-container
+	{
+		.block-body
+		{
+			.block-row
+			{
+				padding: 0;
+				margin: @xf-paddingMedium;
+				flex: ~"0 0 calc(50% - @xf-paddingMedium * 2)";
+				position: relative;
+				overflow: hidden;
+				
+				@media (max-width: @xf-responsiveWide)
+				{
+					flex: ~"0 0 calc(100% - @xf-paddingMedium * 2)";
+				}
+				
+				.contentRow
+				{
+					padding: @xf-paddingLarge;
+					border-radius: @xf-borderRadiusLarge;
+					min-height: 120px;
+					display: flex;
+					align-items: center;
+					
+					.thumbnail
+					{
+						position: absolute;
+						top: -10px;
+						left: -10px;
+						bottom: -10px;
+						right: -10px;
+						width: auto;
+						height: auto;
+						filter: blur(5px);
+						z-index: 1;
+					}
+					
+					.contentRow-main
+					{
+						position: relative;
+						z-index: 3;
+						
+						.title
+						{
+							font-size: @xf-fontSizeLarge;
+							color: @xf-paletteNeutral1;
+							display: inline-block;
+							margin-bottom: 10px;
+						}
+						
+						.desc
+						{
+							color: @xf-inlineModHighlightColor;
+						}
+					}
+					
+					&::after
+					{
+						content: ' ';
+						display: block;
+						position: absolute;
+						top: -10px;
+						left: -10px;
+						bottom: -10px;
+						right: -10px;
+						background: @xf-paletteNeutral3;
+						opacity: .7;
+						z-index: 2;
+					}
+				}
+			}
+		}
+	}
+}
+
+.block-moreThread.block-card
+{
+	.block-container
+	{
+		.block-body
+		{
+			justify-content: flex-start;
+			
+			.block-row
+			{
+				flex: 0 0 33.333%;
+				margin: 0;
+				
+				@media (max-width: @xf-responsiveWide)
+				{
+					flex: 0 0 50%;
+				}
+				
+				.contentRow
+				{
+					display: block;
+					overflow: hidden;
+					border-radius: @xf-borderRadiusLarge;
+					border: 1px solid @xf-borderColor;
+					background: @xf-pageBg;
+					
+					.thumbnail
+					{
+						width: 100%;
+						height: auto;
+						padding-top: 60%;
+					}
+					
+					.contentRow-main
+					{
+						padding: @xf-paddingLarge;
+						
+						@media (max-width: @xf-responsiveNarrow)
+						{
+							.desc
+							{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}]]></template>
+  <template type="public" title="dcMoreThread_blocks" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[<xf:if is="$relatedThreads is not empty">
+	<xf:macro name="block" 
+			  arg-name="{{ phrase('related_threads') }}"
+			  arg-class="relatedThreads"
+			  arg-threads="{$relatedThreads}" 
+			  arg-thumbnail="{$xf.options.dcMoreThread_thumbnail}"
+			  arg-style="{$xf.options.dcMoreThread_relatedThreads_style}" />
+</xf:if>
+
+<xf:if is="$mostView is not empty">
+	<xf:macro name="block" 
+			  arg-name="{{ phrase('most_view') }}"
+			  arg-class="mostView"
+			  arg-threads="{$mostView}" 
+			  arg-thumbnail="{$xf.options.dcMoreThread_thumbnail}" 
+			  arg-style="{$xf.options.dcMoreThread_mostView_style}" />
+</xf:if>
+
+<xf:if is="$latestThreads is not empty">
+	<xf:macro name="block" 
+			  arg-name="{{ phrase('latest_threads') }}"
+			  arg-class="latestThreads"
+			  arg-threads="{$latestThreads}" 
+			  arg-thumbnail="{$xf.options.dcMoreThread_thumbnail}" 
+			  arg-style="{$xf.options.dcMoreThread_latestThreads_style}" />
+</xf:if>
+
+<xf:macro name="block" arg-name="!" arg-class="!" arg-threads="!" arg-thumbnail="{{ false }}" arg-style="!">
+	<xf:css src="dcMoreThread.less" />
+	
+	<div class="block block-moreThread block-{$style} block-{$class}">
+		<div class="block-container">
+			<div class="block-minorHeader">
+				{$name}
+			</div>
+			<div class="block-body">
+				<xf:foreach loop="$threads" value="$thread">
+					<li class="block-row">
+						<div class="contentRow">
+							<xf:if is="$thumbnail">
+								<a class="thumbnail avatar" 
+								   href="{{ link('threads', $thread) }}"
+								   style="background-image: url('{$thread.getThumbnail()}')">
+								</a>
+							<xf:else/>
+								<xf:avatar user="$thread.User" size="s" href="{{ link('threads', $thread) }}" />
+							</xf:if>
+							<div class="contentRow-main">
+								<a href="{{ link('threads', $thread) }}" title="{$thread.title}" class="title"
+								   data-xf-init="tooltip">
+									{{ snippet($thread.title, $xf.options.dcMoreThread_title_limit) }}
+								</a>
+								<span class="desc">
+									<ul class="listInline listInline--bullet">
+										<li>
+											<xf:fa icon="fa-user" title="{{ phrase('thread_starter')|for_attr }}" />
+											<span class="u-srOnly">{{ phrase('thread_starter') }}</span>
+
+											<xf:username user="{$thread.User}" defaultname="{$thread.username}" class="u-concealed" />
+										</li>
+										<li>
+											<xf:fa icon="fa-clock" title="{{ phrase('start_date')|for_attr }}" />
+											<span class="u-srOnly">{{ phrase('start_date') }}</span>
+
+											<a href="{{ link('threads', $thread) }}" class="u-concealed"><xf:date time="{$thread.post_date}" /></a>
+										</li>
+									</ul>
+								</span>
+							</div>
+						</div>
+					</li>
+				</xf:foreach>
+			</div>
+		</div>
+	</div>
+</xf:macro>]]></template>
+</templates>

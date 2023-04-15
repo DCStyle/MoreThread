@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="post_macros" modification_key="dcMoreThread_post_macros" description="Pass variables into template" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro name="post"]]></find>
+    <replace><![CDATA[<xf:macro name="post" arg-mostView="" arg-latestThreads="" arg-relatedThreads=""]]></replace>
+  </modification>
+  <modification type="public" template="post_macros" modification_key="dcMoreThread_post_macros_blocks" description="Append blocks to first post" execution_order="20" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:extension name="after_content">]]></find>
+    <replace><![CDATA[<xf:if is="$post.isFirstPost()">
+	<xf:include template="dcMoreThread_blocks" />
+</xf:if>
+
+$0]]></replace>
+  </modification>
+  <modification type="public" template="thread_view" modification_key="dcMoreThread_thread_view" description="Pass variables into template" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro name="{{ $templateOverrides.post_macro ?: 'post_macros::post' }}"]]></find>
+    <replace><![CDATA[<xf:macro name="{{ $templateOverrides.post_macro ?: 'post_macros::post' }}"
+		  arg-mostView="{$mostView}"
+		  arg-latestThreads="{$latestThreads}"
+		  arg-relatedThreads="{$relatedThreads}"]]></replace>
+  </modification>
+</template_modifications>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="most_view" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Most viewed]]></phrase>
+  <phrase title="option.dcMoreThread_excludedForums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Excluded forums]]></phrase>
+  <phrase title="option.dcMoreThread_latestThreads" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Enable Latest threads block ?]]></phrase>
+  <phrase title="option.dcMoreThread_latestThreads_days" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Days limit]]></phrase>
+  <phrase title="option.dcMoreThread_latestThreads_forums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Latest threads block forums]]></phrase>
+  <phrase title="option.dcMoreThread_latestThreads_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Threads limit]]></phrase>
+  <phrase title="option.dcMoreThread_latestThreads_sameForum" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Only show threads in same forum?]]></phrase>
+  <phrase title="option.dcMoreThread_latestThreads_style" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Block style]]></phrase>
+  <phrase title="option.dcMoreThread_mostView" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Enable Most viewed block ?]]></phrase>
+  <phrase title="option.dcMoreThread_mostView_days" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Days limit]]></phrase>
+  <phrase title="option.dcMoreThread_mostView_forums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Most viewed block forums]]></phrase>
+  <phrase title="option.dcMoreThread_mostView_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Threads limit]]></phrase>
+  <phrase title="option.dcMoreThread_mostView_sameForum" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Only show threads in same forum?]]></phrase>
+  <phrase title="option.dcMoreThread_mostView_style" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Block style]]></phrase>
+  <phrase title="option.dcMoreThread_relatedThreads" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Enable Related threads block ?]]></phrase>
+  <phrase title="option.dcMoreThread_relatedThreads_days" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Days limit]]></phrase>
+  <phrase title="option.dcMoreThread_relatedThreads_forums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Related threads block forums]]></phrase>
+  <phrase title="option.dcMoreThread_relatedThreads_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Thread limit]]></phrase>
+  <phrase title="option.dcMoreThread_relatedThreads_sameForum" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Only show threads in same forum?]]></phrase>
+  <phrase title="option.dcMoreThread_relatedThreads_style" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Block style]]></phrase>
+  <phrase title="option.dcMoreThread_thumbnail" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Enable thread thumbnail functions ?]]></phrase>
+  <phrase title="option.dcMoreThread_title_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Thread title limit]]></phrase>
+  <phrase title="option_explain.dcMoreThread_excludedForums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_latestThreads" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_latestThreads_days" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_latestThreads_forums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_latestThreads_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_latestThreads_sameForum" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_latestThreads_style" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_mostView" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_mostView_days" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Enter 0 to disable days limit]]></phrase>
+  <phrase title="option_explain.dcMoreThread_mostView_forums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_mostView_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_mostView_sameForum" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_mostView_style" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_relatedThreads" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_relatedThreads_days" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Enter 0 to disable days limit]]></phrase>
+  <phrase title="option_explain.dcMoreThread_relatedThreads_forums" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_relatedThreads_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_relatedThreads_sameForum" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_relatedThreads_style" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.dcMoreThread_thumbnail" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Make sure you've installed <b>D.C Style - Thumbnail</b> before you enabled this option.]]></phrase>
+  <phrase title="option_explain.dcMoreThread_title_limit" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_group.dcMoreThread" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[D.C Style - More Threads]]></phrase>
+  <phrase title="option_group_description.dcMoreThread" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="related_threads" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Related threads]]></phrase>
+  <phrase title="style_prop.dcMoreThread_thumbnail_height" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Thumbnail height]]></phrase>
+  <phrase title="style_prop.dcMoreThread_thumbnail_width" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[Thumbnail width]]></phrase>
+  <phrase title="style_prop_desc.dcMoreThread_thumbnail_height" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.dcMoreThread_thumbnail_width" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+</phrases>

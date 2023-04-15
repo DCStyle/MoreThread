@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="dcMoreThread_excludedForums" edit_format="callback" data_type="array" advanced="0">
+    <default_value>["0"]</default_value>
+    <edit_format_params>XF\Option\Forum::renderSelectMultiple</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="dcMoreThread" display_order="3"/>
+  </option>
+  <option option_id="dcMoreThread_latestThreads" edit_format="onoff" data_type="boolean" advanced="0">
+    <default_value>0</default_value>
+    <relation group_id="dcMoreThread" display_order="300"/>
+  </option>
+  <option option_id="dcMoreThread_latestThreads_days" edit_format="spinbox" data_type="integer" advanced="0">
+    <default_value>0</default_value>
+    <edit_format_params>min=0</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="304"/>
+  </option>
+  <option option_id="dcMoreThread_latestThreads_forums" edit_format="callback" data_type="array" advanced="0">
+    <default_value>["0"]</default_value>
+    <edit_format_params>XF\Option\Forum::renderSelectMultiple</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="dcMoreThread" display_order="301"/>
+  </option>
+  <option option_id="dcMoreThread_latestThreads_limit" edit_format="spinbox" data_type="positive_integer" advanced="0">
+    <default_value>6</default_value>
+    <edit_format_params>min=1</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="303"/>
+  </option>
+  <option option_id="dcMoreThread_latestThreads_sameForum" edit_format="onoff" data_type="boolean" advanced="0">
+    <default_value>0</default_value>
+    <relation group_id="dcMoreThread" display_order="302"/>
+  </option>
+  <option option_id="dcMoreThread_latestThreads_style" edit_format="select" data_type="string" advanced="0">
+    <default_value>default</default_value>
+    <edit_format_params>default=Default
+cover=Cover
+card=Card</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="300"/>
+  </option>
+  <option option_id="dcMoreThread_mostView" edit_format="onoff" data_type="boolean" advanced="0">
+    <default_value>0</default_value>
+    <relation group_id="dcMoreThread" display_order="200"/>
+  </option>
+  <option option_id="dcMoreThread_mostView_days" edit_format="spinbox" data_type="integer" advanced="0">
+    <default_value>0</default_value>
+    <edit_format_params>min=0</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="204"/>
+  </option>
+  <option option_id="dcMoreThread_mostView_forums" edit_format="callback" data_type="array" advanced="0">
+    <default_value>["0"]</default_value>
+    <edit_format_params>XF\Option\Forum::renderSelectMultiple</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="dcMoreThread" display_order="201"/>
+  </option>
+  <option option_id="dcMoreThread_mostView_limit" edit_format="spinbox" data_type="positive_integer" advanced="0">
+    <default_value>6</default_value>
+    <edit_format_params>min=1</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="203"/>
+  </option>
+  <option option_id="dcMoreThread_mostView_sameForum" edit_format="onoff" data_type="boolean" advanced="0">
+    <default_value>0</default_value>
+    <relation group_id="dcMoreThread" display_order="202"/>
+  </option>
+  <option option_id="dcMoreThread_mostView_style" edit_format="select" data_type="string" advanced="0">
+    <default_value>default</default_value>
+    <edit_format_params>default=Default
+cover=Cover
+card=Card</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="200"/>
+  </option>
+  <option option_id="dcMoreThread_relatedThreads" edit_format="onoff" data_type="boolean" advanced="0">
+    <default_value>0</default_value>
+    <relation group_id="dcMoreThread" display_order="100"/>
+  </option>
+  <option option_id="dcMoreThread_relatedThreads_days" edit_format="spinbox" data_type="integer" advanced="0">
+    <default_value>0</default_value>
+    <edit_format_params>min=0</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="104"/>
+  </option>
+  <option option_id="dcMoreThread_relatedThreads_forums" edit_format="callback" data_type="array" advanced="0">
+    <default_value>["0"]</default_value>
+    <edit_format_params>XF\Option\Forum::renderSelectMultiple</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="dcMoreThread" display_order="101"/>
+  </option>
+  <option option_id="dcMoreThread_relatedThreads_limit" edit_format="spinbox" data_type="positive_integer" advanced="0">
+    <default_value>6</default_value>
+    <edit_format_params>min=1</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="103"/>
+  </option>
+  <option option_id="dcMoreThread_relatedThreads_sameForum" edit_format="onoff" data_type="boolean" advanced="0">
+    <default_value>0</default_value>
+    <relation group_id="dcMoreThread" display_order="102"/>
+  </option>
+  <option option_id="dcMoreThread_relatedThreads_style" edit_format="select" data_type="string" advanced="0">
+    <default_value>default</default_value>
+    <edit_format_params>default=Default
+cover=Cover
+card=Card</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="100"/>
+  </option>
+  <option option_id="dcMoreThread_thumbnail" edit_format="onoff" data_type="boolean" advanced="0">
+    <default_value>0</default_value>
+    <relation group_id="dcMoreThread" display_order="1"/>
+  </option>
+  <option option_id="dcMoreThread_title_limit" edit_format="spinbox" data_type="positive_integer" advanced="0">
+    <default_value>55</default_value>
+    <edit_format_params>min=55</edit_format_params>
+    <relation group_id="dcMoreThread" display_order="2"/>
+  </option>
+</options>
