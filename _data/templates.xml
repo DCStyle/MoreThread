@@ -199,8 +199,8 @@
 		}
 	}
 }]]></template>
-  <template type="public" title="dcMoreThread_blocks" version_id="1000031" version_string="1.0.0 Beta 1"><![CDATA[<xf:if is="$relatedThreads is not empty">
-	<xf:macro name="block" 
+  <template type="public" title="dcMoreThread_blocks" version_id="1000191" version_string="1.0.1 Patch Level 1"><![CDATA[<xf:if is="$relatedThreads is not empty">
+	<xf:macro id="block" 
 			  arg-name="{{ phrase('related_threads') }}"
 			  arg-class="relatedThreads"
 			  arg-threads="{$relatedThreads}" 
@@ -209,7 +209,7 @@
 </xf:if>
 
 <xf:if is="$mostView is not empty">
-	<xf:macro name="block" 
+	<xf:macro id="block" 
 			  arg-name="{{ phrase('most_view') }}"
 			  arg-class="mostView"
 			  arg-threads="{$mostView}" 
@@ -218,7 +218,7 @@
 </xf:if>
 
 <xf:if is="$latestThreads is not empty">
-	<xf:macro name="block" 
+	<xf:macro id="block" 
 			  arg-name="{{ phrase('latest_threads') }}"
 			  arg-class="latestThreads"
 			  arg-threads="{$latestThreads}" 
@@ -226,7 +226,7 @@
 			  arg-style="{$xf.options.dcMoreThread_latestThreads_style}" />
 </xf:if>
 
-<xf:macro name="block" arg-name="!" arg-class="!" arg-threads="!" arg-thumbnail="{{ false }}" arg-style="!">
+<xf:macro id="block" arg-name="!" arg-class="!" arg-threads="!" arg-thumbnail="{{ false }}" arg-style="!">
 	<xf:css src="dcMoreThread.less" />
 	
 	<div class="block block-moreThread block-{$style} block-{$class}">

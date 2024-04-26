@@ -27,8 +27,7 @@ class MoreThread extends Repository
 			
 			if ($options->dcMoreThread_mostView_days)
 			{
-				$date = new \DateTime();
-				$now = $date->getTimestamp();
+				$now = \XF::$time;
 				$days = $now - $options->dcMoreThread_relatedThreads_days * 86400;
 				
 				$threads->where('post_date', '>=', $days);
@@ -146,8 +145,7 @@ class MoreThread extends Repository
 		
 		if ($options->dcMoreThread_latestThreads_days)
 		{
-			$date = new \DateTime();
-			$now = $date->getTimestamp();
+			$now = \XF::$time;
 			$days = $now - $options->dcMoreThread_latestThreads_days * 86400;
 			$latestThreadsFinder->where('post_date', '>=', $days);
 		}
@@ -169,10 +167,13 @@ class MoreThread extends Repository
 		
 		return $latestThreads->slice(0, $limit, true);
 	}
-	
+
+	/**
+	 * @return \XF\Mvc\Entity\Finder|\XF\Finder\Thread
+	 */
 	protected function getThreadFinder()
 	{
-		return \XF::finder('XF:Thread')
+		return $this->finder('XF:Thread')
 			->where('discussion_state', '=', 'visible')
 			->where('discussion_type', '<>', 'redirect')
 			->where('post_date', '<=', \XF::$time);
